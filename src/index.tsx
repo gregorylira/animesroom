@@ -1,27 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
 import "./global.scss";
 
-import {CardAnime} from './components/cardAnime';
+import { CardAnime } from "./components/cardAnime";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <CardAnime 
-      imagem='https://cdn.myanimelist.net/images/characters/5/354941.jpg?_gl=1*rlsxe3*_ga*MTE0NDQ3NDg5LjE2MzQ4MzYyOTE.*_ga_26FEP9527K*MTY0Mjc3OTU1OS4xMC4xLjE2NDI3Nzk4OTIuMjk.' 
-      nome= "Komi-san wa, Comyushou desu." genres="Comedy, Slice of Life." 
-      estudio='OLM' duracao='24 min' ultimoEpisodio='12' 
-      episodioNovo 
+    <CardAnime
+      imagem="https://cdn.myanimelist.net/images/characters/5/354941.jpg"
+      nome="Komi-san wa, Comyushou desu."
+      ultimoEpisodio="12"
+      episodioNovo
+      lancamento
     />
-    <CardAnime 
-      imagem='https://cdn.myanimelist.net/images/characters/5/354941.jpg?_gl=1*rlsxe3*_ga*MTE0NDQ3NDg5LjE2MzQ4MzYyOTE.*_ga_26FEP9527K*MTY0Mjc3OTU1OS4xMC4xLjE2NDI3Nzk4OTIuMjk.' 
-      nome= "Komi-san wa, Comyushou desu." genres="Comedy, Slice of Life." 
-      estudio='OLM' duracao='24 min' ultimoEpisodio='12' 
-      episodioNovo 
+    <CardAnime
+      imagem="https://cdn.myanimelist.net/images/anime/1943/117882.jpg"
+      nome="Kobayashi-san Chi no Maidragon S: Nippon no Omotenashi - Attend wa Dragon Desu"
+      ultimoEpisodio="12"
+      lancamento={false}
     />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
