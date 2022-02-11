@@ -1,22 +1,23 @@
-import "./style.scss";
+import { Container } from "./style";
 import lancamento from "../../assets/tag-lancamento.png";
 
 type cardAnimeProps = {
   children?: React.ReactNode;
+  type?: "destaque" | "normal" | "recente";
   nome: string;
   imagem?: string;
   episodioNovo?: boolean;
   ultimoEpisodio: string;
-  lancamento: boolean;
+  lancamento?: boolean;
 };
 
 export function CardAnime(props: cardAnimeProps) {
-  function handleClick() {
-    console.log("clicou");
-  }
+  // function handleClick() {
+  //   console.log("clicou");
+  // }
   return (
-    <div className="card-anime" onClick={handleClick}>
-      <img src={props.imagem} alt={props.nome} />
+    <Container type={props.type}>
+      <img className="animeImage" src={props.imagem} alt={props.nome} />
       <img
         className={`${props.lancamento ? "em-lancamento" : "finalizado"}`}
         src={lancamento}
@@ -27,6 +28,6 @@ export function CardAnime(props: cardAnimeProps) {
         Episodio{props.episodioNovo && " Novo"}
         <span>{props.ultimoEpisodio}</span>
       </footer>
-    </div>
+    </Container>
   );
 }
