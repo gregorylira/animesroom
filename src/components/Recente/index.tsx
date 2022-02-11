@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Home() {
+export function Recente() {
   return (
     <div itemScope itemType="https://schema.org/VideoObject">
       <meta
