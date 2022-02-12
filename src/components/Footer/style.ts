@@ -5,6 +5,7 @@ export const Foot = styled.footer`
   bottom: 0rem;
   border-top: 1px solid var(--border);
   text-align: center;
+  background-color: var(--background-header);
   color: var(--text);
   position: absolute;
   bottom: 0;
@@ -28,7 +29,7 @@ export const Foot = styled.footer`
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
-        background-color: gray;
+        background-color: var(--border);
       }
     }
   }

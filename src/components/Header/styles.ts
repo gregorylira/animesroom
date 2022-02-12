@@ -8,6 +8,7 @@ export const Head = styled.header`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
+  background-color: var(--background-header);
 `;
 
 export const Title = styled.div`
@@ -28,5 +29,5 @@ export const Login = styled.div`
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-color: gray;
+  background-color: var(--border);
 `;
