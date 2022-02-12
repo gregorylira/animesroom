@@ -8,6 +8,12 @@ export const Container = styled.section`
   width: 100%;
   height: 30%;
 
+  section {
+    div {
+      transition-duration: 3s;
+    }
+  }
+
   img {
     width: 33.125rem;
     height: 18.75rem;
