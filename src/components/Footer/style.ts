@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Foot = styled.footer`
+  display: block;
   width: 100%;
-  bottom: 0rem;
+  position: absolute;
+  left: 0;
+  bottom: auto;
   border-top: 1px solid var(--border);
   text-align: center;
   background-color: var(--background-header);
   color: var(--text);
-  position: absolute;
-  bottom: 0;
 
   .sociais {
     display: flex;

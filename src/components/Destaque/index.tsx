@@ -56,14 +56,14 @@ export function Destaque({ slider }: sliderProps) {
           <section key={index}>
             <div>
               {index === current.center && (
-                <img src={item.image} alt="slider" className="center" />
+                <img src={item} alt="slider" className="center" />
               )}
             </div>
 
             <div>
               {index === current.leftOne && (
                 <img
-                  src={item.image}
+                  src={item}
                   alt="slider"
                   className="LeftOne"
                   onClick={prevSlide}
@@ -74,7 +74,7 @@ export function Destaque({ slider }: sliderProps) {
             <div>
               {index === current.rightOne && (
                 <img
-                  src={item.image}
+                  src={item}
                   alt="slider"
                   className="RightOne"
                   onClick={nextSlide}
@@ -85,7 +85,7 @@ export function Destaque({ slider }: sliderProps) {
             <div>
               {index === current.leftTwo && (
                 <img
-                  src={item.image}
+                  src={item}
                   alt="slider"
                   className="LeftTwo"
                   onClick={prevSlide}
@@ -96,7 +96,7 @@ export function Destaque({ slider }: sliderProps) {
             <div>
               {index === current.rightTwo && (
                 <img
-                  src={item.image}
+                  src={item}
                   alt="slider"
                   className="RightTwo"
                   onClick={nextSlide}

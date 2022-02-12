@@ -8,12 +8,6 @@ export const Container = styled.section`
   width: 100%;
   height: 30%;
 
-  section {
-    div {
-      transition-duration: 3s;
-    }
-  }
-
   img {
     width: 33.125rem;
     height: 18.75rem;
@@ -45,7 +39,7 @@ export const Container = styled.section`
     left: calc(50% - 16rem);
     transform: scale(1);
     z-index: 3;
-    transition: all 0.5s;
+    transition: 450ms ease 0s;
     &:hover {
       transform: scale(1.1);
     }
@@ -54,7 +48,7 @@ export const Container = styled.section`
   .LeftOne {
     z-index: 2;
     transform: translateX(-100%) scale(0.85);
-    transition: all 0.5s;
+    transition: 450ms ease 0s;
     &:hover {
       transform: translateX(-100%) scale(0.9);
     }
@@ -63,7 +57,7 @@ export const Container = styled.section`
   .RightOne {
     z-index: 2;
     transform: translateX(0%) scale(0.85);
-    transition: all 0.5s;
+    transition: 450ms ease 0s;
     &:hover {
       transform: translateX(0%) scale(0.9);
     }
@@ -72,7 +66,7 @@ export const Container = styled.section`
   .LeftTwo {
     z-index: 1;
     transform: translateX(-150%) scale(0.7);
-    transition: all 0.5s;
+    transition: 450ms ease 0s;
     &:hover {
       transform: translateX(-150%) scale(0.75);
     }
@@ -81,7 +75,7 @@ export const Container = styled.section`
   .RightTwo {
     z-index: 1;
     transform: translateX(50%) scale(0.7);
-    transition: all 0.5s;
+    transition: 450ms ease 0s;
     &:hover {
       transform: translateX(50%) scale(0.75);
     }

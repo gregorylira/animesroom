@@ -4,7 +4,7 @@ import { Foot } from "./style";
 export function Footer() {
   return (
     <Foot>
-      <div className="sociais">
+      <footer className="sociais">
         <span className="title">Redes Sociais</span>
         <div className="cicle">
           <div></div>
@@ -13,7 +13,7 @@ export function Footer() {
           <div></div>
           <div></div>
         </div>
-      </div>
+      </footer>
 
       <div className="footer">
         <span>Todos os direitos reservados a @</span>

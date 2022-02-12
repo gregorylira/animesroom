@@ -5,27 +5,11 @@ import g3 from "../../assets/generico3.jpg";
 import g4 from "../../assets/generico4.jpg";
 
 export interface sliderProps {
-  slider: slide[];
+  slider: string[];
 }
 
 export type slide = {
   image: string;
 };
 
-export const sliderData: slide[] = [
-  {
-    image: komi,
-  },
-  {
-    image: g1,
-  },
-  {
-    image: g2,
-  },
-  {
-    image: g3,
-  },
-  {
-    image: g4,
-  },
-];
+export const sliderData = [komi, g1, g2, g3, g4];

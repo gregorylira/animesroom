@@ -1,6 +1,7 @@
 import React from "react";
 import { Destaque } from "../Destaque";
 import { sliderData } from "../Destaque/data";
+import { Recentes } from "../Recentes";
 import { Main } from "./style";
 
 export function DisplayMain() {
@@ -8,7 +9,7 @@ export function DisplayMain() {
     <Main>
       <Destaque slider={sliderData}></Destaque>
 
-      <div>Adicionados Recentemente</div>
+      <Recentes></Recentes>
 
       <div>Animes Recentes</div>
     </Main>
