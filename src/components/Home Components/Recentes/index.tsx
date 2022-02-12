@@ -1,12 +1,15 @@
 import React from "react";
 import { Container, List } from "./style";
-import { CardAnime } from "../CardAnime";
-import g4 from "../../assets/generico4.jpg";
+import { CardAnime } from "../../CardAnime";
+import g4 from "../../../assets/generico4.jpg";
 
 export function Recentes() {
   return (
     <Container>
-      <h1>Adicionados Recentemente</h1>
+      <div className="title">
+        <span>Adicionados Recentemente</span>
+        <span className="more">+</span>
+      </div>
 
       <List>
         <CardAnime

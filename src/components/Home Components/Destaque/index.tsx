@@ -43,8 +43,6 @@ export function Destaque({ slider }: sliderProps) {
     });
   };
 
-  console.log(current);
-
   if (!Array.isArray(slider) || slider.length <= 0) {
     return null;
   }

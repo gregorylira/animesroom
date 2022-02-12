@@ -8,31 +8,15 @@ export const Container = styled.section`
   width: 100%;
   height: 30%;
 
+  div {
+    transition: all 500ms;
+  }
   img {
     width: 33.125rem;
     height: 18.75rem;
     position: absolute;
-    top: 3rem;
+    top: 5rem;
     object-fit: cover;
-  }
-
-  .right-arrow,
-  .left-arrow {
-    position: absolute;
-    top: 10.3rem;
-    font-size: 3.1rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .right-arrow {
-    right: 10rem;
-  }
-
-  .left-arrow {
-    left: 10rem;
   }
 
   .center {

@@ -1,5 +1,5 @@
 import React from "react";
-import { DisplayMain } from "../../components/DisplayMain";
+import { DisplayMain } from "../../components/Home Components/DisplayMain";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Container } from "./styles";

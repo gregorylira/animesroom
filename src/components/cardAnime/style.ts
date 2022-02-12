@@ -8,15 +8,24 @@ export const Container = styled.div<CardAnimeProps>`
   ${(props) =>
     props.type === "destaque" &&
     `
-        width: 13rem;
-        height: 25rem;
+    width: 18.75rem;
+    height: 25rem;
+    margin: 8px;
     `}
 
   ${(props) =>
     props.type === "recente" &&
     `
-  width: 25rem;
-    height: 23rem;
+    width: 18.75rem;
+    height: 12.5rem;
+    margin: 8px;
+    
+  `}
+
+  ${(props) =>
+    props.type === "normal" &&
+    `
+    margin: 30px;
   `}
   background-color: #1f1f1f;
   display: flex;
@@ -24,7 +33,7 @@ export const Container = styled.div<CardAnimeProps>`
   border-radius: 23px;
 
   overflow: hidden;
-  margin: 30px;
+
   cursor: pointer;
 
   img {
