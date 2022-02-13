@@ -4,6 +4,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    #disqus_thread{
+        width: 70%;
+        margin: 0 9%;
+    }
 `
 
 export const Content = styled.div`
@@ -61,5 +65,29 @@ export const Content = styled.div`
     
 `
 export const Recomendados = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    color: var(--text);
+    width: 100%;
+    overflow: scroll;
+    overflow-y: hidden;
 
+    .lista-recomendados{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+        
+        img{
+            object-fit: cover;
+            margin-bottom: 0.25rem;
+        }
+        span{
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+    }
 `

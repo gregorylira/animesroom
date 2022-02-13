@@ -6,7 +6,7 @@ type cardAnimeProps = {
   type?: "destaque" | "normal" | "recente";
   nome: string;
   imagem?: string;
-  ultimoEpisodio: string;
+  ultimoEpisodio?: string;
 };
 
 export function CardAnime(props: cardAnimeProps) {
@@ -17,7 +17,9 @@ export function CardAnime(props: cardAnimeProps) {
       </image>
 
       <span className="nomeAnime">{props.nome}</span>
-      <span className="episodio"> Episodio {props.ultimoEpisodio}</span>
+      {props.ultimoEpisodio && (
+        <span className="episodio"> Episodio {props.ultimoEpisodio}</span>
+      )}
     </Container>
   );
 }

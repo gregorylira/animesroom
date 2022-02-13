@@ -104,10 +104,13 @@ export const Container = styled.div<CardAnimeProps>`
   ${(props) =>
     props.type === "normal" &&
     `
-    margin: 30px;
+    img{
+      width: 270px;
+      height: 400px;
+    }
   `}
 
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
