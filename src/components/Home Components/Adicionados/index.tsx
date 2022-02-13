@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./style";
-import g3 from "../../../assets/generico3.jpg";
+import g1 from "../../../assets/generico1.jpg";
 import { CardAnime } from "../../CardAnime";
 
 export function Adicionados() {
@@ -14,37 +14,16 @@ export function Adicionados() {
       <div className="list">
         <CardAnime
           type="destaque"
-          nome="test"
-          imagem={g3}
-          episodioNovo={false}
+          nome="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka?"
+          imagem={g1}
           ultimoEpisodio="3"
-          lancamento={false}
         />
 
-        <CardAnime
-          type="destaque"
-          nome="test"
-          imagem={g3}
-          episodioNovo={false}
-          ultimoEpisodio="3"
-          lancamento={false}
-        />
-        <CardAnime
-          type="destaque"
-          nome="test"
-          imagem={g3}
-          episodioNovo={false}
-          ultimoEpisodio="3"
-          lancamento={false}
-        />
-        <CardAnime
-          type="destaque"
-          nome="test"
-          imagem={g3}
-          episodioNovo={false}
-          ultimoEpisodio="3"
-          lancamento={false}
-        />
+        <CardAnime type="destaque" nome="test" imagem={g1} ultimoEpisodio="3" />
+
+        <CardAnime type="destaque" nome="test" imagem={g1} ultimoEpisodio="3" />
+
+        <CardAnime type="destaque" nome="test" imagem={g1} ultimoEpisodio="3" />
       </div>
     </Container>
   );

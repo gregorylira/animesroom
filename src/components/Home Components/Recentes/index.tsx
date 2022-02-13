@@ -14,144 +14,45 @@ export function Recentes() {
       <List>
         <CardAnime
           type="recente"
-          nome="test"
+          nome="Naruto"
           imagem={g4}
-          episodioNovo={false}
           ultimoEpisodio="1"
-          lancamento={false}
         />
 
         <CardAnime
           type="recente"
-          nome="test"
+          nome="Shingeki no Kyojin: The Final Season Part 2"
           imagem={g4}
-          episodioNovo={false}
           ultimoEpisodio="1"
-          lancamento={false}
         />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
 
-        <CardAnime
-          type="recente"
-          nome="test"
-          imagem={g4}
-          episodioNovo={false}
-          ultimoEpisodio="1"
-          lancamento={false}
-        />
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
+
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
+
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
+
+        <CardAnime type="recente" nome="test" imagem={g4} ultimoEpisodio="1" />
       </List>
     </Container>
   );

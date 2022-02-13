@@ -11,7 +11,7 @@ export const Container = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 8.7rem;
+    padding-left: 7rem;
     font-size: 2rem;
 
     .more {

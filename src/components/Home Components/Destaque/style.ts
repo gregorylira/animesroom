@@ -17,13 +17,15 @@ export const Container = styled.section`
     position: absolute;
     top: 5rem;
     object-fit: cover;
+    border: none;
   }
 
   .center {
     left: calc(50% - 16rem);
     transform: scale(1);
     z-index: 3;
-    transition: 450ms ease 0s;
+    transition: 450ms ease-in-out;
+
     &:hover {
       transform: scale(1.1);
     }
