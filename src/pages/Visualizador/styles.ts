@@ -1,2 +1,65 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+`
+
+export const Content = styled.div`
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 70%;
+    margin: 6% 9%;
+    
+    h2{
+        font-size: 1.5rem;
+        color : var(--text);
+        margin-bottom: 1rem;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+        height: 600px;
+        
+        video{
+            width: 1020px;
+            height: 600px;
+        }
+        .episodios-direita-video{
+            max-height: 600px;
+            width: 50%;
+            overflow: auto;
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+    .botões-next-previous{
+        width: 1020px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+
+        button{
+            padding: 1rem 1.5rem;
+            border-radius: 0.25rem;
+            border: 0;
+            background: var(--red);
+            color: var(--text);
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    
+`
+export const Recomendados = styled.div`
+
+`
