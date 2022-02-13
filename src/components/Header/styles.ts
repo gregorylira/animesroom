@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Head = styled.header`
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
