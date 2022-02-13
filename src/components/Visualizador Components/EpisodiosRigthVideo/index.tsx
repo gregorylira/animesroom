@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import genericoImg from "../../assets/generico1.jpg";
+import genericoImg from "../../../assets/generico1.jpg";
 
 export function EpisodiosRigthVideo() {
   return (

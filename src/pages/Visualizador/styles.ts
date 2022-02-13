@@ -83,6 +83,7 @@ export const Recomendados = styled.div`
         img{
             object-fit: cover;
             margin-bottom: 0.25rem;
+            border-radius: 0.25rem;
         }
         span{
             font-size: 1rem;
