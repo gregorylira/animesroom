@@ -60,3 +60,6 @@ export const Content = styled.div`
 
     
 `
+export const Recomendados = styled.div`
+
+`
