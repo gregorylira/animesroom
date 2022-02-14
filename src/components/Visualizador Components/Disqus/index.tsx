@@ -1,4 +1,5 @@
 import { DiscussionEmbed } from "disqus-react";
+import { Container } from "./styles";
 
 interface PostProps {
   url?: string;
@@ -13,9 +14,9 @@ const DisqusComments = ({ title }: PostProps) => {
     language: "pt_BR",
   };
   return (
-    <div>
+    <Container>
       <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
-    </div>
+    </Container>
   );
 };
 export { DisqusComments };

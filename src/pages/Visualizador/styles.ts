@@ -72,6 +72,7 @@ export const Recomendados = styled.div`
   .lista-recomendados {
     overflow: scroll;
     overflow-y: hidden;
+
     display: flex;
     flex-direction: row;
     text-align: center;
