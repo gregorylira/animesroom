@@ -1,109 +1,38 @@
-import { useState } from "react";
-import { Container } from "./style";
-import { sliderProps } from "./data";
+import React, { Component } from "react";
+import Carousel from "react-spring-3d-carousel";
+import { Cont, Container } from "./styles";
+import { sliderData } from "./data";
 
-interface sliderCurrent {
-  leftTwo: number;
-  leftOne: number;
-  center: number;
-  rightOne: number;
-  rightTwo: number;
-}
+export default class Destaque extends Component {
+  state = {
+    goToSlide: 0,
+    offsetRadius: 3,
+    showNavigation: false,
+    config: { tension: 120, friction: 14 },
+  };
 
-const sliderStart = {
-  leftTwo: 0,
-  leftOne: 1,
-  center: 2,
-  rightOne: 3,
-  rightTwo: 4,
-};
+  slides = sliderData.map((slide, index) => {
+    return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
+  });
 
-export function Destaque({ slider }: sliderProps) {
-  const [current, setCurrent] = useState<sliderCurrent>(sliderStart);
-
-  const length = slider.length;
-
-  const nextSlide = () => {
-    setCurrent({
-      leftTwo: current.leftTwo === length - 1 ? 0 : current.leftTwo + 1,
-      leftOne: current.leftOne === length - 1 ? 0 : current.leftOne + 1,
-      center: current.center === length - 1 ? 0 : current.center + 1,
-      rightOne: current.rightOne === length - 1 ? 0 : current.rightOne + 1,
-      rightTwo: current.rightTwo === length - 1 ? 0 : current.rightTwo + 1,
+  onChangeInput = (e: any): void => {
+    this.setState({
+      [e.target.name]: parseInt(e.target.value, 10) || 0,
     });
   };
 
-  const prevSlide = () => {
-    setCurrent({
-      leftTwo: current.leftTwo === 0 ? length - 1 : current.leftTwo - 1,
-      leftOne: current.leftOne === 0 ? length - 1 : current.leftOne - 1,
-      center: current.center === 0 ? length - 1 : current.center - 1,
-      rightOne: current.rightOne === 0 ? length - 1 : current.rightOne - 1,
-      rightTwo: current.rightTwo === 0 ? length - 1 : current.rightTwo - 1,
-    });
-  };
-
-  if (!Array.isArray(slider) || slider.length <= 0) {
-    return null;
+  render() {
+    return (
+      <Container>
+        <Carousel
+          slides={this.slides}
+          goToSlide={this.state.goToSlide}
+          offsetRadius={this.state.offsetRadius}
+          showNavigation={this.state.showNavigation}
+          animationConfig={this.state.config}
+        />
+        <Cont />
+      </Container>
+    );
   }
-
-  return (
-    <Container>
-      {slider.map((item, index) => {
-        return (
-          <section key={index}>
-            <div>
-              {index === current.center && (
-                <img src={item} alt="slider" className="center" />
-              )}
-            </div>
-
-            <div>
-              {index === current.leftOne && (
-                <img
-                  src={item}
-                  alt="slider"
-                  className="LeftOne"
-                  onClick={prevSlide}
-                />
-              )}
-            </div>
-
-            <div>
-              {index === current.rightOne && (
-                <img
-                  src={item}
-                  alt="slider"
-                  className="RightOne"
-                  onClick={nextSlide}
-                />
-              )}
-            </div>
-
-            <div>
-              {index === current.leftTwo && (
-                <img
-                  src={item}
-                  alt="slider"
-                  className="LeftTwo"
-                  onClick={prevSlide}
-                />
-              )}
-            </div>
-
-            <div>
-              {index === current.rightTwo && (
-                <img
-                  src={item}
-                  alt="slider"
-                  className="RightTwo"
-                  onClick={nextSlide}
-                />
-              )}
-            </div>
-          </section>
-        );
-      })}
-    </Container>
-  );
 }

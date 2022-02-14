@@ -4,7 +4,6 @@ export const Container = styled.section`
   width: 80%;
   height: 50%;
   position: relative;
-  padding-top: 30rem;
 
   .title {
     width: 90%;
