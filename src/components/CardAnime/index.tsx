@@ -1,5 +1,4 @@
 import { Container } from "./style";
-import lancamento from "../../assets/tag-lancamento.png";
 
 type cardAnimeProps = {
   children?: React.ReactNode;

@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Container, InputForm, Tittle } from "./styles";
 
 export function Form() {
