@@ -1,12 +1,9 @@
-import { useParams } from "react-router-dom";
 import { CardAnime } from "../../components/CardAnime";
 import { EpisodiosRigthVideo } from "../../components/Visualizador Components/EpisodiosRigthVideo";
 import { Header } from "../../components/Header";
 import { Container, Content, Recomendados } from "./styles";
-
-import generico1Img from "../../assets/generico1.jpg";
-import { DiscussionEmbed } from "disqus-react";
-import { DisqusComments } from "../../components/Disqus";
+import { DisqusComments } from "../../components/Visualizador Components/Disqus";
+import g1 from "../../assets/generico1.jpg";
 
 export function Visualizador() {
   return (
@@ -31,6 +28,7 @@ export function Visualizador() {
             <button>Lista de episodios</button>
             <button>Proximo episodio</button>
           </div>
+
           <Recomendados>
             <h2>Recomendados</h2>
             <div className="lista-recomendados">
@@ -40,7 +38,7 @@ export function Visualizador() {
                     key={i}
                     nome="Nome de Anime"
                     // ultimoEpisodio="28"
-                    imagem={generico1Img}
+                    imagem={g1}
                     type="normal"
                   />
                 );

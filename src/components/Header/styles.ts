@@ -14,9 +14,23 @@ export const Head = styled.header`
 export const Title = styled.div`
   font-size: 1.5rem;
   padding-left: 2rem;
-  width: 20rem;
-  color: var(--red);
+  width: 80rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex: row nowrap;
 
+  .link {
+    text-decoration: none;
+    color: var(--red);
+  }
+
+  .contato {
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    color: var(--red-nav);
+  }
   span {
     color: var(--text);
     opacity: 35%;

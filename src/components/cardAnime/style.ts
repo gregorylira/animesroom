@@ -8,7 +8,6 @@ export const Container = styled.div<CardAnimeProps>`
   ${(props) =>
     props.type === "destaque" &&
     `
-    
     width:  19.5rem;
     height: 35rem;
     margin: 8px;
@@ -41,8 +40,8 @@ export const Container = styled.div<CardAnimeProps>`
       text-align: left;
       padding-left: 1rem;
       width: 100%;
-      height: 6rem;
-      max-height: 6rem;
+      height: 5rem;
+      max-height: 5rem;
       max-width: 20rem;
       overflow: hidden;
     }
@@ -82,7 +81,7 @@ export const Container = styled.div<CardAnimeProps>`
       font-size: 1.1rem;
       text-align: left;
       padding-left: 1rem;
-      max-height: 2rem;
+      max-height: 1.4rem;
       max-width: 98%;
       overflow: hidden;
     }
@@ -111,6 +110,7 @@ export const Container = styled.div<CardAnimeProps>`
       width: 270px;
       height: 400px;
     }
+    
   `}
   margin-bottom: 0.5rem;
   display: flex;

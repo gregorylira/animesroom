@@ -18,12 +18,15 @@ export const Foot = styled.footer`
     justify-content: center;
     padding: 2rem 0;
     .title {
-      font-size: 1.2rem;
+      text-align: center;
+      font-size: 1.6rem;
+      padding-bottom: 0.5rem;
     }
 
     .cicle {
       display: flex;
       flex-direction: row;
+      padding-bottom: 5rem;
       div {
         cursor: pointer;
         margin: 1rem;
