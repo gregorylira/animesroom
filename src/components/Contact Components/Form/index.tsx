@@ -16,24 +16,19 @@ const formInitialState: formProps = {
 };
 
 export function Form() {
-<<<<<<< HEAD
+  const [form, setForm] = useState<formProps>(formInitialState);
+
   async function handleSubmit(event: any) {
     event.preventDefault();
-    console.log(event.target.value);
+    console.log(form);
 
     const docRef = await addDoc(collection(db, "cities"), {
       name: "Tokyo",
       country: "Japan",
     });
     console.log("Document written with ID: ", docRef.id);
-=======
-  const [form, setForm] = useState<formProps>(formInitialState);
 
-  function handleSubmit(event: any) {
-    event.preventDefault();
-    console.log(form);
     setForm(formInitialState);
->>>>>>> 0ad073fddf2991ebce34f75945e3654f36f0e1fa
   }
 
   return (
