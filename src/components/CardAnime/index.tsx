@@ -11,9 +11,9 @@ type cardAnimeProps = {
 export function CardAnime(props: cardAnimeProps) {
   return (
     <Container type={props.type}>
-      <image>
+      <div className="image">
         <img className="animeImage" src={props.imagem} alt={props.nome} />
-      </image>
+      </div>
 
       <span className="nomeAnime">{props.nome}</span>
       {props.ultimoEpisodio && (

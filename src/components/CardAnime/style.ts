@@ -12,7 +12,7 @@ export const Container = styled.div<CardAnimeProps>`
     height: 35rem;
     margin: 8px;
 
-    image {
+    .image {
       width: 100%;
       height: 100%;
       margin: 0 auto;
@@ -60,7 +60,7 @@ export const Container = styled.div<CardAnimeProps>`
     height: 15rem;
     margin: 8px;
 
-    image {
+    .image {
       width: 90%;
       height: 75%;
       margin: 0 auto;
