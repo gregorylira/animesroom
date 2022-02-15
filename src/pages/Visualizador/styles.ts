@@ -30,9 +30,9 @@ export const Content = styled.div`
     gap: 3rem;
     height: 600px;
 
-    video {
-      width: 1020px;
-      height: 600px;
+    iframe {
+      width: 90rem;
+      height: 37.5rem;
     }
     .episodios-direita-video {
       max-height: 600px;

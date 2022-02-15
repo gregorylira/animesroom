@@ -13,9 +13,10 @@ export function Visualizador() {
         <Content>
           <h2>Titulo Generico de Anime</h2>
           <aside>
-            <video controls>
-              <source src="https://content.jwplatform.com/videos/BfUwyoGX-ajYdByGU.mp4" />
-            </video>
+            <iframe
+              allowFullScreen
+              src="https://www.blogger.com/video.g?token=AD6v5dy4kxpY4VJWUXJz_bgFufAB-Lft26wXIsTUhWt9n5z8_iKsHnbDOIBYYIc0j4TqsbmxFgxrn9OnKoUZcwAxQhQqZsHIprdEJTLsEtn_NsthM4Rd8_3NfACzk0aiLREQdZLUCs0"
+            ></iframe>
 
             <div className="episodios-direita-video">
               {Array.from({ length: 12 }).map((_, i) => {
