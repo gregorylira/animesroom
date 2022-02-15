@@ -109,3 +109,4 @@ dist
 
 firestore.rules
 storage.rules
+build/
