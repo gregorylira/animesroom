@@ -50,6 +50,8 @@ typings/
 # Optional npm cache directory
 .npm
 
+
+
 # Optional eslint cache
 .eslintcache
 
@@ -104,3 +106,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+firestore.rules
+storage.rules
