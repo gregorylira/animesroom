@@ -25,7 +25,8 @@ export const Title = styled.div`
     color: var(--red);
   }
 
-  .contato {
+  .contato,
+  .visualizador {
     font-size: 1.4rem;
     padding-left: 3rem;
     text-decoration: none;

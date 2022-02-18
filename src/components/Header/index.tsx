@@ -12,11 +12,13 @@ export function Header() {
         <Link className="contato" to="/contato">
           Contato
         </Link>
-        <Link className="contato" to="/visualizador">
+        <Link className="visualizador" to="/visualizador">
           Visualizador
         </Link>
       </Title>
-      <Login></Login>
+      <Link className="login" to="/login">
+        <Login></Login>
+      </Link>
     </Head>
   );
 }
